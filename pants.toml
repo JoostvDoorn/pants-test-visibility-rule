@@ -1,0 +1,16 @@
+[GLOBAL]
+pants_version = "2.16.0.dev7"
+backend_packages = [
+  "pants.backend.shell",
+  "pants.backend.python",
+  "pants.backend.awslambda.python",
+  "pants.backend.experimental.visibility",
+  "pants.backend.python.lint.black",
+]
+unmatched_build_file_globs = "error"
+
+[python-infer]
+unowned_dependency_behavior = "error"
+
+[source] # https://www.pantsbuild.org/docs/source-roots
+marker_filenames = ["SOURCE_ROOT"]
